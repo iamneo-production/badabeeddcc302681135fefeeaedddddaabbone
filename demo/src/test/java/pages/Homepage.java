@@ -55,23 +55,4 @@ public class Homepage {
                             .build());
         }
     }
-
-    public void searchRazor(WebDriver driver, ExtentTest test) {
-        try {
-            WebElement searchFor = driver.findElement(By.xpath(Locators.searchbox));
-            searchFor.sendKeys("razor");
-            searchFor.submit();
-    
-            WebElement firstElement = driver.findElement(By.xpath(Locators.firstElement));
-            String firstElementText = firstElement.getText();
-            test.log(Status.PASS, "Found first element:");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            test.log(Status.FAIL, "Unable to find element",
-                    MediaEntityBuilder.createScreenCaptureFromPath(screenshot.captureScreenshot(driver, "click-explore"))
-                            .build());
-        }
-    }
-    
 }

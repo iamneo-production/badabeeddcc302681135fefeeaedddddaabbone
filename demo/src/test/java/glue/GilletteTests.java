@@ -9,10 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
-import org.openqa.selenium.NoSuchElementException;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -68,9 +69,6 @@ public class GilletteTests {
         homePage.clickBrands(driver, test);
         log.info("Clicked MACH3");
     }
-
-    
-
 
     @Then("^I should see \"([^\"]*)\" under the products list$")
     public void iShouldSeeUnderTheProductsList(String expectedText) {

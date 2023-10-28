@@ -9,7 +9,4 @@ public class Locators {
     public static String searchResults = "//*[@id=\"main-content\"]/div/h1";
     public static String sectionElement = "//*[@id=\"footerContent\"]/div/div[1]/div[1]/ul/li[2]/a";
     public static String articlesList = "//*[@id=\"tabItem_1\"]";
-    public static String firstElement = "//div[@id='Razor']";
-    public static String searchbox = "//input[@id='search-box-input']";
-
 }
