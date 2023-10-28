@@ -19,7 +19,7 @@ public class EventHandler implements WebDriverListener {
 	private static void logger(String logtxt) {
 		if(logtxt != null) {
 			try {
-				File file = new File("log.log");
+				File file = new File("/home/coder/project/log.log");
 				BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
 				writer.write(logtxt);
 				writer.write("\n");
